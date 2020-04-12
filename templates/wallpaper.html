@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Game of Wallpapers</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static' , filename='bootstrap.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static' , filename='wallpaper.css')}}" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+            <div class="inner">
+            <h3 class="masthead-brand">GoW</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="{{ url_for('hello')}}">Home</a>
+                <a class="nav-link" href="{{ url_for('about')}}">About</a>
+                <a class="nav-link" href="{{ url_for('contact')}}">Contact</a>
+            </nav>
+            </div>
+                <div class="container main-con">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <a href="/static/images/16.jpg" download="Game of Thrones"><img class="card-img-top" src="/static/images/16.jpg" alt="Card image cap"></a>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="col-lg-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <a href="/static/images/9.jpg" download="Jon snow"><img class="card-img-top" src="/static/images/9.jpg" alt="Card image cap"></a>
+                                        
+                                    </div>
+                                </div>
+            
+                                <div class="col-lg-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <a href="/static/images/4.jpg" download="Winter is Coming"><img class="card-img-top" src="/static/images/4.jpg" alt="Card image cap"></a>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/20.jpg" download="Game of Thrones"><img class="card-img-top" src="/static/images/20.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/21.jpg" download="Jon snow"><img class="card-img-top" src="/static/images/21.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/22.jpg" download="Winter is Coming"><img class="card-img-top" src="/static/images/22.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                            </div>
+
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/27.jpg" download="Game of Thrones"><img class="card-img-top" src="/static/images/27.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/34.jpg" download="Jon snow"><img class="card-img-top" src="/static/images/34.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-lg-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <a href="/static/images/35.jpg" download="Winter is Coming"><img class="card-img-top" src="/static/images/35.jpg" alt="Card image cap"></a>
+                                            
+                                        </div>
+                                    </div>
+                            </div>
+
+
+
+                            
+                    
+                    
+                </div>
+
+                <div class="container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="{{url_for('wallpaper')}}">1</a></li>
+                          <li class="page-item"><a class="page-link" href="{{url_for('wallpaper2')}}">2</a></li>
+                          <li class="page-item"><a class="page-link" href="{{url_for('wallpaper3')}}">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+
+                
+
+                
+
+                
+            </div>
+      </header>
+   </div>
+      
+  
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static' , filename='jquery-3.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{{ url_for('static' , filename='popper.js')}}"></script>
+    <script src="{{ url_for('static' , filename='bootstrap.js')}}"></script>
+  
+
+</body></html>

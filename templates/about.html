@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+ <link rel="stylesheet" href="{{ url_for('static' , filename='about.css')}}">
+{% endblock %}
+
+{% block title %} About {% endblock %}
+
+{% block body %}
+ 
+<div class="container">
+    <div class="jumbotron jumbo">
+        <h1 class="display-4">GoT Wallpaper</h1>
+        <p class="lead">This is a simple web app to download the Game of Thrones wallpapers in full resolution and can be used as wallpaper for your Desktop.</p>
+        <hr class="my-4">
+        <p>Developed using <b>Flask</b>, which is a web framework written in Python.</p>
+        <a class="btn btn-success btn-lg" href="{{url_for('wallpaper')}}" role="button">Wallpapers</a>
+      </div>
+</div>
+
+{% endblock %}

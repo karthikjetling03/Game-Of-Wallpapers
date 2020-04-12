@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+ <link rel="stylesheet" href="{{ url_for('static' , filename='contact.css')}}">
+ <script src="https://kit.fontawesome.com/cc0321e204.js" crossorigin="anonymous"></script>
+{% endblock %}
+{% block title %} Contact {% endblock %}
+
+{% block body %}
+<div class="container"> 
+    <h1><b>Karthik Jetling</b></h1>
+    <p>Chennai, India.</p>
+
+    <h5>I'm Intern at Cognizant, Chennai. Currently I am undergoing in the specialization on Cloud and Devops. I have learn't lot more things after I joined as an intern.</h5>
+    <p>In my free time I like to listen music, Playing Carroms and so on.</p>
+
+</div>
+<div class="row">
+    <div class="col-lg-2">
+        <a href="https://www.instagram.com/karthik_jetling03/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+    </div>
+    <div class="col-lg-2">
+        <a href="https://www.linkedin.com/in/karthik-jetling/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+    </div>
+    
+    <div class="col-lg-2">
+        <a href="https://github.com/jetlingkarthik" target="_blank"> <i class="fab fa-github fa-3x"></i> </a>
+    </div>
+</div>
+{% endblock %}
